@@ -1,9 +1,13 @@
+use std::io::Write;
 
 fn user_input() {
 
+    print!("finsight >^º> ");
+
+    std::io::stdout().flush().unwrap();
+
     let mut buffer = String::new();
     let _input = std::io::stdin();
-    println!("finsight >^º> ");
 
     match _input.read_line(&mut buffer) {
         Ok(_) => {
