@@ -23,7 +23,7 @@ fn user_input()
                     println!("exiting...");
                     process::exit(0);
                 },
-                "help" => {
+                "help" | "HELP" => {
                     // read from a text file.
                     const HELP_MESSAGE: &str = include_str!("resources/help_message.txt");
                     println!("{}", HELP_MESSAGE);
