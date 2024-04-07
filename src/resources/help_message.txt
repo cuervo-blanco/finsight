@@ -1,0 +1,21 @@
+Welcome to Finsight - Your personal finance insight tool.
+
+Commands:
+  ADD EXPENSE <amount> <category> <date> <description>  - Adds a new expense.
+  ADD INCOME <amount> <category> <date> <description>   - Adds a new income.
+  LIST EXPENSES [<category>]                            - Lists all expenses or by category.
+  LIST INCOME [<category>]                              - Lists all income or by category.
+  SAVE                                                  - Saves the current records to a file.
+  LOAD                                                  - Loads records from a file.
+  ANALYZE SPENDING                                      - Analyzes spending by category and time.
+  ANALYZE INCOME                                        - Analyzes income over time.
+  ANALYZE BALANCE                                       - Analyzes overall balance over time.
+  DELETE EXPENSE <id>                                   - Deletes an expense record by ID.
+  DELETE INCOME <id>                                    - Deletes an income record by ID.
+  HELP                                                  - Displays this help message.
+  EXIT                                                  - Exits the program.
+
+Usage:
+  Type a command followed by its arguments to perform an action. For example:
+  ADD EXPENSE 50 Food 2023-04-07 "Lunch at Joe's"
+

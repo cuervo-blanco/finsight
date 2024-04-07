@@ -4,7 +4,9 @@ use std::process;
 fn user_input()
 {
 
-    print!("finsight >^º> ");
+    // if there is a menu item selected (command) append it to the last_command
+    // else
+    print!("{}", "finsight ");
 
     std::io::stdout().flush().unwrap();
 
@@ -18,8 +20,13 @@ fn user_input()
             match command.trim()
             {
                 "exit" => {
-                    println!("Exiting");
+                    println!("exiting...");
                     process::exit(0);
+                },
+                "help" => {
+                    // read from a text file.
+                    const HELP_MESSAGE: &str = include_str!("resources/help_message.txt");
+                    println!("{}", HELP_MESSAGE);
                 },
                 _ => {
                     println!("Unknown command");
